@@ -1,2 +1,8 @@
-# 3020project-group17
-COMP3020 Project
+COMP3020 Project Group 17
+===========================
+
+Movie Ticket Website
+--------------
+> Boyu Tang 
+> Andrew Kozar 
+> Zachary Medeiros 
