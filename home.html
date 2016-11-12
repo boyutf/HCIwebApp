@@ -1,7 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 <title>homepage</title>
 <style type="text/css">
 .container {
@@ -144,6 +149,7 @@ footer #bottomNav {
 }
 
 .dropdown3-content {
+	width:800px;
     display: none;
     position: absolute;
 	left: 150px;
@@ -151,15 +157,18 @@ footer #bottomNav {
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-#main #contentOne section section .imagewrap #myDropdown2 {
+#main #contentOne section section .movie #myDropdown2 {
 }
 
 .dropdown3-content a {
+	
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+}
+#main #contentOne section section .movie #myDropdown3 {
 }
 #main #contentTwo table caption {
 	position: relative;
@@ -170,14 +179,8 @@ footer #bottomNav {
 	background-color: #F00;
 }
 
-.dropdown2-content a:hover {background-color: #f1f1f1}
-
 .show {display:block;}
 
-#main #contentTwo table {
-	height: 300px;
-	top: 100px;
-}
 header h1 #topNav p {
 	position: static;
 }
@@ -186,33 +189,21 @@ header h1 #topNav p {
 	top: 0px;
 	right: 0px;
 }
-#container #main #contentOne.2 {
-	height: 250px;
-	width: 512px;
-	background-color: #F00;
-}
-header h1 #topNav p a {
-}
+
+
 header h1 #topNav p {
 	right: 100px;
 }
 #container header h1 #topNav p {
-	right: 200px;
+	right: 400px;
 }
+
 #main #contentOne {
 	background-color: #0F3;
-}
-#main #contentOne {
 	width: 512px;
 	height: 550px;
 }
-#main #contentOne.2 {
-	background-color: #F00;
-	position: static;
-	right: 0px;
-	padding: 0px;
-	margin: 0px;
-}
+
 #main #contentTwo {
 	height: 500px;
 	width: 512px;
@@ -246,31 +237,88 @@ header h1 #topNav p {
 #main #contentOne #myDropdown2 {
 	z-index: 10;
 }
-.imagewrap {display:inline-block;position:relative;}
+.movie {display:inline-block;position:relative;}
 .button1 {position:absolute;bottom:0;right:0;}
 
 #main #contentOne select {
 	height: 45px;
 	width: 120px;
 }
-#main #contentOne section section .imagewrap #myDropdown2 {
-	left: 185px;
-	width: 200px;
-}
-#main #contentOne section section .imagewrap #myDropdown3 {
-	left: 185px;
-	width: 200px;
-}
 #main #contentOne {
 	background-color: #C3F;
 }
-#main #contentOne section section .imagewrap .button1 {
+#main #contentOne section section .movie .button1 {
 	background-color: #F00;
 	width: 100px;
 	height: 30px;
+	left:75px;
 	
 }
 
+#topNav p {
+	position: absolute;
+}
+
+#main #contentOne section section .movie #myDropdown2 {
+	left: 75px;
+	width: 270px;
+}
+#main #contentOne section section .movie #myDropdown3 {
+	left: 75px;
+	width: 270px;
+}
+
+.dropbtn2 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn2:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown2-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown2-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown2 a:hover {background-color: #f1f1f1}
+
+
+#main #contentOne section section #movie1 {
+	width: 256px;
+	height: 250px;
+	float: right;
+	position:relative;
+	background-color: #FFFFFF
+}
+#main #contentOne section section #movie2 {
+	width: 256px;
+	height: 250px;
+	float: right;
+	position:relative;
+	background-color: #FFFFFF
+}
 </style>
 </head>
 
@@ -278,14 +326,15 @@ header h1 #topNav p {
 <div id="container">
 <header>
   <h1>header
+   <button onclick="sign()">Sign</button>
+   <button onclick="myFunction2(1)">signup</button>
+      <p id="display"></p>
   <nav id="topNav">
     <p>
     language:
       <a href="/English/">English</a> |
       <a href="/French/">français</a> |
     </p>
-    <button onclick="myFunction(0)">login</button>
-    <button onclick="myFunction(1)">signup</button>
   </nav>
   </h1>
 </header>
@@ -354,26 +403,55 @@ header h1 #topNav p {
     <hr>
     <section style="overflow:scroll;">
     <section>
-     <div class="imagewrap">
-      <img src="1.jpg" width="250" height="300" />
-      <input type="button" onclick="myFunction(2)" class="button1" value="Showtime"/>
-      <div class="dropdown2-content" id="myDropdown2">
-      <a href="#">Monday</a>
-      <a href="#">Tuesday</a>
-      <a href="#">Wednesday</a>
+     <div class="movie">
+      <img src="3.jpg" width="250" height="300" />
+      <input type="button" onclick="myFunction(2)" class="button1" value="Showtimes"/>
+      
+      
+      <div id="movie1">MOVIE1 INFORMATION
       </div>
- 
+      
+      
+     <div class="dropdown2-content" id="myDropdown2">
+ <form action="">
+  <input type="radio" name="time" onclick="test(this.value)" value="111:00am" > 11:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="11:00pm" > 1:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="17:00pm" > 7:00pm<br>
+  <input type="radio" name="time" onclick="test(this.value)" value="110:00am" > 10:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="13:00pm" > 3:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="110:00pm" > 10:00pm<br>
+  <input type="radio" name="time" onclick="test(this.value)" value="111:00am" > 11:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="15:00pm" > 5:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="16:30pm" > 6:30pm<br>
+  Your selected time is: <input type="text" id="result1">
+  <input type="submit" value="Buy it">
+</form>
      </div>
     </section><!--movie 1 section-->
     
     <section>
-      <div class="imagewrap">
+      <div class="movie">
     <img src=2.jpg width="250" height="300" />
     <input type="button" onclick="myFunction(3)" class="button1" value="Showtime"/>
-      <div class="dropdown3-content" id="myDropdown3">
-      <a href="#">Monday</a>
-      <a href="#">Tuesday</a>
-      <a href="#">Wednesday</a>
+    
+    <div id="movie1">MOVIE2 INFORMATION</div>
+          
+          
+    <div class="dropdown3-content" id="myDropdown3">
+    <form action="">
+  <input type="radio" name="time" onclick="test(this.value)" value="211:00am" > 11:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="21:00pm" > 1:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="27:00pm" > 7:00pm<br>
+  <input type="radio" name="time" onclick="test(this.value)" value="210:00am" > 10:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="23:00pm" > 3:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="210:00pm" > 10:00pm<br>
+  <input type="radio" name="time" onclick="test(this.value)" value="211:00am" > 11:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="25:00pm" > 5:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="26:30pm" > 6:30pm<br>
+  Your selected time is: <input type="text" id="result2">
+  <input type="submit" value="Buy it">
+</form>
+
       </div>
     </div>
     </section>
@@ -382,14 +460,11 @@ header h1 #topNav p {
   </div><!--contentOne.1-->
 
 <div id="contentTwo">
-打你麻痹的字
+ranking/........0.0
 </div>
-  
-  <!--<footer>
- <nav id="bottomNav">bottom nav</nav></footer> -->
+
 </div><!--main-->
 </div><!--container-->
-
 
 <script>
 //toggle between hiding and showing the dropdown content
@@ -412,12 +487,26 @@ window.onclick = function(event) {
   }
 }
 
-    function myFunction(num) {
+function myFunction2(num) {
 	if(num==0)
     confirm("LOGGGGGGGG IN!");
 	else if(num==1)
 	 confirm("SIGNNNNNN UP!");
 	
+}
+
+function test(time) {
+var sub=time.substring(0,1);
+    document.getElementById("result"+sub).value = time.substring(1,time.length);
+}
+
+function sign() {
+    var person = prompt("Please enter your username", "");
+    
+    if (person != null) {
+        document.getElementById("display").innerHTML =
+        "Hello " + person +"!"
+    }
 }
 </script>
 
