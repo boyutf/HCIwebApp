@@ -71,14 +71,6 @@ header {
 	width: 1024px;
 	font-size: 14px;
 }
-#main footer {
-	height: 100px;
-	width: 1024px;
-}
-footer #bottomNav {
-	height: 50px;
-	width: 1024px;
-}
 <!-- style for dropdown menu-->
 
 .dropbtn {
@@ -147,6 +139,10 @@ footer #bottomNav {
     display: block;
     text-align: left;
 }
+#main #contentOne section section .movie #myDropdown2 {
+	left: 75px;
+	width: 280px;
+}
 
 .dropdown3-content {
 	width:800px;
@@ -156,8 +152,6 @@ footer #bottomNav {
     background-color: #f9f9f9;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-#main #contentOne section section .movie #myDropdown2 {
 }
 
 .dropdown3-content a {
@@ -169,21 +163,36 @@ footer #bottomNav {
     text-align: left;
 }
 #main #contentOne section section .movie #myDropdown3 {
+	left: 75px;
+	width: 280px;
 }
-#main #contentTwo table caption {
-	position: relative;
-	top: 0px;
-	width: 0px;
-	left: 0px;
-	height: 20px;
-	background-color: #F00;
+
+.dropdown4-content {
+	width:800px;
+    display: none;
+    position: absolute;
+	left: 150px;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown4-content a {
+	
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+#main #contentOne section section .movie #myDropdown4 {
+	left: 75px;
+	width: 280px;
 }
 
 .show {display:block;}
 
-header h1 #topNav p {
-	position: static;
-}
+
 header h1 #topNav p {
 	position: absolute;
 	top: 0px;
@@ -259,51 +268,7 @@ header h1 #topNav p {
 	position: absolute;
 }
 
-#main #contentOne section section .movie #myDropdown2 {
-	left: 75px;
-	width: 270px;
-}
-#main #contentOne section section .movie #myDropdown3 {
-	left: 75px;
-	width: 270px;
-}
-
-.dropbtn2 {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropbtn2:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
-
-.dropdown2 {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown2-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown2-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
 .dropdown2 a:hover {background-color: #f1f1f1}
-
 
 #main #contentOne section section #movie1 {
 	width: 256px;
@@ -313,6 +278,13 @@ header h1 #topNav p {
 	background-color: #FFFFFF
 }
 #main #contentOne section section #movie2 {
+	width: 256px;
+	height: 250px;
+	float: right;
+	position:relative;
+	background-color: #FFFFFF
+}
+#main #contentOne section section #movie3 {
 	width: 256px;
 	height: 250px;
 	float: right;
@@ -409,12 +381,20 @@ header h1 #topNav p {
       
       
       <div id="movie1">MOVIE1 INFORMATION
+       <p id="Movie1title">Dr.strange</p>
+       <p id="Movie1genre">Action,Comedy
+       </p>
+       <p id="Movie1runningtime">2h10m
+       </p>
+       <p id="Movie1opening">Friday
+       </p>
+       <p id="Movie1rating">★★★★★
+       </p>
       </div>
-      
-      
-     <div class="dropdown2-content" id="myDropdown2">
- <form action="">
-  <input type="radio" name="time" onclick="test(this.value)" value="111:00am" > 11:00am 
+  
+<div class="dropdown2-content" id="myDropdown2">
+  <form action="">
+  <input type="radio" id="time1" name="time" onclick="test(this.value)" value="111:00am" > 11:00am 
   <input type="radio" name="time" onclick="test(this.value)" value="11:00pm" > 1:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="17:00pm" > 7:00pm<br>
   <input type="radio" name="time" onclick="test(this.value)" value="110:00am" > 10:00am 
@@ -424,9 +404,9 @@ header h1 #topNav p {
   <input type="radio" name="time" onclick="test(this.value)" value="15:00pm" > 5:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="16:30pm" > 6:30pm<br>
   Your selected time is: <input type="text" id="result1">
-  <input type="submit" value="Buy it">
+  <input type="submit" onclick="buy(1)" value="Buy it">
 </form>
-     </div>
+   </div>
     </section><!--movie 1 section-->
     
     <section>
@@ -434,11 +414,20 @@ header h1 #topNav p {
     <img src=2.jpg width="250" height="300" />
     <input type="button" onclick="myFunction(3)" class="button1" value="Showtime"/>
     
-    <div id="movie1">MOVIE2 INFORMATION</div>
-          
+    <div id="movie2">MOVIE2 INFORMATION
+       <p id="Movie2title">Arrival</p>
+       <p id="Movie2genre">Action
+       </p>
+       <p id="Movie2runningtime">1h57m
+       </p>
+       <p id="Movie2opening">Wednesday
+       </p>
+       <p id="Movie2rating">★★★★
+       </p>
+      </div>
           
     <div class="dropdown3-content" id="myDropdown3">
-    <form action="">
+     <form action="">
   <input type="radio" name="time" onclick="test(this.value)" value="211:00am" > 11:00am 
   <input type="radio" name="time" onclick="test(this.value)" value="21:00pm" > 1:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="27:00pm" > 7:00pm<br>
@@ -449,12 +438,57 @@ header h1 #topNav p {
   <input type="radio" name="time" onclick="test(this.value)" value="25:00pm" > 5:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="26:30pm" > 6:30pm<br>
   Your selected time is: <input type="text" id="result2">
-  <input type="submit" value="Buy it">
+  <input type="submit" onclick="buy(2)" value="Buy it">
+</form>
+
+      </div>
+    </div>
+    </section><!--movie 2-->
+    
+    <section>
+      <div class="movie">
+    <img src=3.jpg width="250" height="300" />
+    <input type="button" onclick="myFunction(4)" class="button1" value="Showtime"/>
+    
+    <div id="movie3">MOVIE3 INFORMATION
+       <p id="Movie3title">Testing</p>
+       <p id="Movie3genre">Action
+       </p>
+       <p id="Movie3runningtime">1h01m
+       </p>
+       <p id="Movie3opening">Monday
+       </p>
+       <p id="Movie3rating">★★
+       </p>
+      </div>
+          
+    <div class="dropdown4-content" id="myDropdown4">
+     <form action="">
+     <p id="Monday">Monday
+  <input type="radio" name="time" onclick="test(this.value)" value="311:00am" > 11:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="31:00pm" > 1:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="37:00pm" > 7:00pm<br>
+  </p>
+  
+   <p id="Tuesday">Tuesday
+  <input type="radio" name="time" onclick="test(this.value)" value="310:00am" > 10:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="33:00pm" > 3:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="310:00pm" > 10:00pm<br>
+  </p>
+  
+  <p id="Friday">Friday
+  <input type="radio" name="time" onclick="test(this.value)" value="311:00am" > 11:00am 
+  <input type="radio" name="time" onclick="test(this.value)" value="35:00pm" > 5:00pm 
+  <input type="radio" name="time" onclick="test(this.value)" value="36:30pm" > 6:30pm<br>
+  </p>
+  Your selected time is: <input type="text" id="result3">
+  <input type="submit" onclick="buy(3)" value="Buy it">
 </form>
 
       </div>
     </div>
     </section>
+    
     </section><!-- left section-->
 
   </div><!--contentOne.1-->
@@ -494,9 +528,15 @@ function myFunction2(num) {
 	 confirm("SIGNNNNNN UP!");
 	
 }
+var timestore="";
+function buy(num){
+	var time=document.getElementById("time1").value;
+   alert("Are you sure you want to buy movie: "+document.getElementById("Movie"+num.toString()+"title").innerHTML+" at time: "+timestore+"?");
+}
 
 function test(time) {
 var sub=time.substring(0,1);
+timestore=time.substring(1,time.length);
     document.getElementById("result"+sub).value = time.substring(1,time.length);
 }
 
