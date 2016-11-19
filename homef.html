@@ -7,7 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-<title>homepage</title>
+<title>Page d'accueil</title>
 <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 
@@ -15,9 +15,10 @@
 <div id="container">
 <header>
   <h1>
-  <p1 style="color:blue;">Movie selection</p1>
-   <button onclick="sign()">login</button>
-   <button onclick="signup()">signup</button>
+  <p1 style="color:blue;">
+Sélection du film</p1>
+   <button onclick="sign()">s'identifier</button>
+   <button onclick="signup()">s'inscrire</button>
       <p id="display"></p>
   <nav id="topNav">
     <p>
@@ -31,8 +32,8 @@
           <div class="login-dropdown">
           <button class="dropbtn">Bob<span class="arrow">&#9660;</span></button>
           <div class="dropdown-content" style="Showtimes:0;">
-            <a href="user-page.html">Profile</a>
-            <a href="#">Sign Out</a>
+            <a href="#">Profil</a>
+            <a href="#">Se déconnecter</a>
             </div>
           </div>
         </div>
@@ -41,20 +42,20 @@
 <div id="titleBar">
   <h2>
   <div class="dropdown" style="float:left;">
-  <button>Showtimes</button>
+  <button>horaires</button>
 
 </div>
 
 <div class="dropdown" style="float:left;">
-  <button>Theatre</button>
+  <button>Théâtre</button>
 </div>
 
 <div class="dropdown" style="float:left;">
-  <button>Trailers</button>
+  <button style="font-size : 20px; width: 100%; height: 40px;">Bande annonce</button>
 </div>
 
 <div class="dropdown" style="float:left;">
-  <button>Giftcard</button>
+  <button style="font-size : 20px; width: 100%; height: 40px;">carte cadeau</button>
 </div>
 
   </h2>
@@ -64,14 +65,16 @@
 
   <div id="contentOne">
   <div id="buttons">
-<button type="button">Nowing playing</button>
-<button type="button">Popular</button>
-<button type="button">Ranking</button>
-<button type="button">Recommdation</button>
+<button type="button">Lecture cours</button>
+<button type="button">Populaire</button>
+<button type="button">Classement</button>
+<button type="button">
+Recommandation</button>
 </div>
 <hr>
 <div id="search">
-<p3 style="color:blue"> sort movies: </p3>
+<p3 style="color:blue"> Trier 
+films: </p3>
 <select id="type">
     <option value="all">All</option>
     <option value="Imax">IMAX</option>
@@ -81,12 +84,13 @@
  <select id="genre">
     <option value="all">All</option>
     <option value="action">Action</option>
-    <option value="cartoon">Adventure</option>
-    <option value="comedy">Comedy</option>
-    <option value="children">Children</option>
+    <option value="cartoon">Aventure</option>
+    <option value="comedy">
+Comédie</option>
+    <option value="children">Enfants</option>
 </select>
 
-  <button type="button" onclick="sort()">Find </button>
+  <button type="button" onclick="sort()">Trouver </button>
     </div>
     
     <hr>
@@ -206,12 +210,12 @@
 
 <div id="contentTwo">
 <h1 style="text-align: center;">
-  <span style="color:#00ffff;"><span style="font-size:72px;"><em><strong><span style="font-family:trebuchet ms,helvetica,sans-serif;">Movie ranking</span></strong></em></span></span></h1>
+  <span style="color:#00ffff;"><span style="font-size:72px;"><em><strong><span style="font-family:trebuchet ms,helvetica,sans-serif;">Film classement</span></strong></em></span></span></h1>
 
 <table id="movies">
   <tr>
-    <th>Movie</th>
-    <th>Ranking</th>
+    <th>Film</th>
+    <th>classement</th>
   </tr>
   <tr>
     <td>Doctor Strange</td>
@@ -248,4 +252,3 @@
 
 </body>
 </html>
-
