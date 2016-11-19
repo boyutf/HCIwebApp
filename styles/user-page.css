@@ -1,0 +1,235 @@
+header {
+    
+    height: 125px;
+    width: 1024px;
+    color: #D6D6D6;
+    background-color: #000;
+    font-size: x-large;
+    margin: 0px;
+}
+
+h3{ text-align: center; }
+
+div.container{
+    margin: auto;
+}
+
+#topNav {
+    height: 45px;
+    width: 1024px;
+    font-size: 14px;
+}
+header h1 #topNav p {
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+
+#titleBar h2 .dropdown .dropbtn {
+    width: 200px;
+    height: 50px;
+}
+#titleBar {
+    height: 50px;
+    width: 1024px;
+    margin: 0px;
+   
+}
+
+#login_button{
+    position:relative;
+    top: 60%;
+    left: 87%;
+}
+#signin_button{
+    position:relative;
+    top: 60%;
+    left: 87%;
+}
+
+<!-- style for dropdown menu-->
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#login-dropdown{
+   position: relative;
+    display: inline-block;
+    padding: 16px; 
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#wrapper {
+    overflow:auto;
+}
+
+#first {
+    float:left; /* add this */
+}
+#second {
+   
+    float:left; /* add this */
+}
+#fourth {
+    float:left; /* add this */
+    width: 70%;
+}
+#fifth {
+    position:absolute;
+    left:600px; 
+
+   /* padding: 70px; /* move redeem table 
+    float:left;*/
+}
+
+
+/** welcome box **/
+.welcome-table{
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: medium;
+    padding:5px;
+}
+.welcome-text{
+    margin:auto;
+}
+table {
+    border-spacing: 0;
+}
+
+/* rewards table, stats table, tabls inputs **/
+fieldset{
+    width:60%;
+}
+input[type=text]{ width: 90%; }
+input[type=submit]{
+    float: right;
+}
+
+.rewards-table {
+    right: 100px;
+    width: 100%;
+    padding: 20px;
+}
+.stats-table{
+    margin:auto;
+    width:100%;
+}
+
+
+/*
+    Ratings Stars
+*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: transparent;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: gold;
+}
+
+/* tabs */
+.tabs{
+    
+    width:900px;
+    margin:0;
+}
+#tab1{
+    height:900px;
+    overflow: scroll;
+}
+
+#tab1, #tab2, #tab3 {
+    
+    width:700px;
+    margin:0;
+    
+}
+.tabs li {
+    list-style:none;
+    display:inline;
+}
+
+.tabs a {
+    margin:0 auto;
+    padding:5px 10px;
+    display:inline-block;
+    background:#666;
+    color:#A9A9A9;
+    text-decoration:none;
+}
+
+.tabs a.active {
+    background:#FFFFFF;
+    color:#000;
+}
+/* images */
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}

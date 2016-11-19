@@ -1,0 +1,383 @@
+<DOCTYPE! html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="styles/user-page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body> 
+  <div id = "container">
+    <header>
+      <h1>Movie Theatre Company
+      <nav id="topNav">
+      <p> language:
+        <a href="/English/" >English</a> |
+        <a href="/French/">Français</a> |
+      </p>
+         <div class="dropdown" style="float:right; padding:16px;">
+          <div class="login-dropdown">
+          <button class="dropbtn">Bob<span class="arrow">&#9660;</span></button>
+          <div class="dropdown-content" style="Showtimes:0;">
+            <a href="#">Profile</a>
+            <a href="#">Sign Out</a>
+            </div>
+          </div>
+        </div>
+      <!--  <button id = "login_button" onclick="myFunction(0)">login</button>
+        <button id = "signin_button" onclick="myFunction(1)">signup</button> -->
+      </nav>
+      </h1>
+    </header>
+
+    <div id="titleBar">
+      <h2>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Showtimes</button>
+          <div class="dropdown-content" style="Showtimes:0;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Theatre</button>
+          <div class="dropdown-content">
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Trailers</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Giftcard</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+      </h2>
+    </div>
+<div id = "wrapper">
+  <div id = "first">
+    <table class = "welcome-table">
+      <th class = "welcome-table">
+        <h2 class = "welcome-text">Welcome,<br> Bob McKenzie</h2>
+      </th>
+      <tr class = "welcome-table">
+        <td><table class="stats-table">
+          <thead>
+            <tr>
+              <td bgcolor="#373636"><span style="color: #ffffff;"><strong>STATS</strong></span></td>
+              <td bgcolor="#FFFFFF">&nbsp;</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td bgcolor="#373636"><span style="color: #ffffff;">Rewards:</span></td>
+              <td bgcolor="#ed1b2e"><span style="color: #ffffff;">400 pts.</span></td>
+              <tr>
+                <td bgcolor="#373636"><span style="color: #ffffff;">Funds</span></td>
+                <td bgcolor="#ed1b2e"><span style="color: #ffffff;">$25.00</span></td>
+              </tr>
+          </tbody>
+          </table>
+        </td>
+
+      </tr>
+    </table>
+  </div>
+
+  <div id = "second">
+    <ul class='tabs'>
+      <li><a href='#tab1'>Movies</a></li>
+      <li><a href='#tab2'>Rewards</a></li>
+      <li><a href='#tab3'>Funds</a></li>
+    </ul>
+
+    <div id='tab1'>
+      <h2> Previously Viewed: </h2>
+      <div class="img">
+        <img src="images/user-page-images/50ft-woman.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/vertigo.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/star-wars.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/indiana-jones.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/star-wars.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/lambs.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/the-thing.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/usual-suspects.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/gone-wind.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/forbidden-planet.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/anatomy-murder.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/back-to-future.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/ET.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/excorist.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/blade-runner.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/pulp-fiction.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/moon.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/metropolis.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+
+      <div class="img">
+        <img src="images/user-page-images/jaws.jpg" width="300" height="200">
+          <p>
+            <h3>Rate It!</h3>
+            <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </p>
+      </div>
+    </div>
+
+
+
+    <div id='tab2'>
+      <div id = "fourth">
+      <fieldset>
+        <legend>Add a Rewards Card</legend>
+          Name: <br>
+          <input type="text" name="Rewards Name">
+          <br><br>
+          Card Number: <br>
+          <input type="text" name="Rewards Card Number">
+          <br><br>
+          <input type="submit" value="Add Rewards Card">
+      </fieldset>
+      </div>
+    
+
+    <div id = "fifth">
+      <table class="rewards-table">
+        <thead>
+          <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#373636"><span style="color: #ffffff;"><strong>EARN</strong></span></td>
+            <td bgcolor="#373636"><span style="color: #ffffff;"><strong>REDEEM</strong></span></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td bgcolor="#373636"><span style="color: #ffffff;">Tickets</span></td>
+            <td bgcolor="#ed1b2e"><span style="color: #ffffff;">100 pts.</span></td>
+            <td bgcolor="#ed1b2e"><span style="color: #ffffff;">500 pts.</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#373636"><span style="color: #ffffff;">Concession</span></td>
+            <td bgcolor="#ed1b2e"><span style="color: #ffffff;">50 pts.</span></td>
+            <td bgcolor="#ed1b2e"><span style="color: #ffffff;">200 pts.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+      
+
+    <div id='tab3'>
+      <fieldset>
+        <legend>Add a Payment Card</legend>
+        Cardholder Name: <br>
+        <input type="text" name="Payment Name">
+        <br><br>
+        Card Number: <br>
+        <input type="text" name="Payment Card Number">
+        <br><br>
+        Expiry Date (MMYY): <br>
+        <input type="text" name="Expiry Date">
+        <br><br>
+        Security Code: <br>
+        <input type="text" name="Security Code">
+        <br><br>
+        Enable 1-Click Checkout:
+        <input type="checkbox" name="1-Click Checkout">
+        <br><br>
+        <input type="submit" value="Add Payment Card">
+      </fieldset>
+
+      <fieldset>
+        <legend>Add a Gift Card</legend>
+        Number: <br>
+        <input type="text" name="GC Number">
+        <br><br>
+        Pin: <br>
+        <input type="text" name="GC Pin">
+        <br><br>
+        <input type="submit" value="Add Gift Card">
+      </fieldset>
+    </div>
+    
+    
+
+    <script src="scripts/user-page.js"></script>
+  
+  </body>
+  </html>
