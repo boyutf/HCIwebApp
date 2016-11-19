@@ -3,27 +3,26 @@
   <head>
     <link rel="stylesheet" href="styles/user-page.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Entreprise De Cinéma</title>
   </head>
   <body> 
   <div id = "container">
     <header>
-      <h1>Movie Theatre Company
+      <h1>Entreprise De Cinéma
       <nav id="topNav">
-      <p> language:
-        <a href="/English/" >English</a> |
-        <a href="/French/">Français</a> |
-      </p>
-         <div class="dropdown" style="float:right; padding:16px;">
-          <div class="login-dropdown">
-          <button class="dropbtn">Bob<span class="arrow">&#9660;</span></button>
-          <div class="dropdown-content" style="Showtimes:0;">
-            <a href="#">Profile</a>
-            <a href="#">Sign Out</a>
+      <div class = "lang-options">
+      <p> <!--language:
+        <a href="/English/" >English</a>--> |
+        <a class = "lang-options-link" href="user-page-english.html">English</a> |
+      </p></div>
+   
+          <div class="dropdown" style="float:right; padding:16px;">
+          <button class="dropbtn login">Bob <span class="arrow">&#9660;</span></button>
+          <div class="dropdown-content login">
+            <a href="user-page-french.html">Profil</a>
+            <a href="">Se déconnecter</a>
             </div>
           </div>
-        </div>
-      <!--  <button id = "login_button" onclick="myFunction(0)">login</button>
-        <button id = "signin_button" onclick="myFunction(1)">signup</button> -->
       </nav>
       </h1>
     </header>
@@ -31,39 +30,22 @@
     <div id="titleBar">
       <h2>
         <div class="dropdown" style="float:left;">
-          <button class="dropbtn">Showtimes</button>
-          <div class="dropdown-content" style="Showtimes:0;">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+          <button class="dropbtn"><a href ="homef.html" style ="color:black; text-decoration:none;"><h2>Horaires</h2></a></button>
+          
         </div>
 
         <div class="dropdown" style="float:left;">
-          <button class="dropbtn">Theatre</button>
-          <div class="dropdown-content">
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 3</a>
-          </div>
+          <button class="dropbtn"><h2>Théâtre</h2></button>
+          
         </div>
 
         <div class="dropdown" style="float:left;">
-          <button class="dropbtn">Trailers</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+          <button class="dropbtn"><a href ="trailers-french.html" style ="color:black; text-decoration:none;"><h2>Bandes Annonces</h2></a></button>
+          
         </div>
 
         <div class="dropdown" style="float:left;">
-          <button class="dropbtn">Giftcard</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+          <button class="dropbtn"><h2>Carte Cadeau</h2></button>
         </div>
 
       </h2>
@@ -72,22 +54,22 @@
   <div id = "first">
     <table class = "welcome-table">
       <th class = "welcome-table">
-        <h2 class = "welcome-text">Welcome,<br> Bob McKenzie</h2>
+        <h2 class = "welcome-text">Bienvenue,<br> Bob McKenzie</h2>
       </th>
       <tr class = "welcome-table">
         <td><table class="stats-table">
           <thead>
             <tr>
-              <td bgcolor="#373636"><span style="color: #ffffff;"><strong>STATS</strong></span></td>
+              <td bgcolor="#373636"><span style="color: #ffffff;"><strong>Statistiques</strong></span></td>
               <td bgcolor="#FFFFFF">&nbsp;</td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td bgcolor="#373636"><span style="color: #ffffff;">Rewards:</span></td>
+              <td bgcolor="#373636"><span style="color: #ffffff;">Récompenses:</span></td>
               <td bgcolor="#ed1b2e"><span style="color: #ffffff;">400 pts.</span></td>
               <tr>
-                <td bgcolor="#373636"><span style="color: #ffffff;">Funds</span></td>
+                <td bgcolor="#373636"><span style="color: #ffffff;">Des Fonds</span></td>
                 <td bgcolor="#ed1b2e"><span style="color: #ffffff;">$25.00</span></td>
               </tr>
           </tbody>
@@ -100,19 +82,19 @@
 
   <div id = "second">
     <ul class='tabs'>
-      <li><a href='#tab1'>Movies</a></li>
-      <li><a href='#tab2'>Rewards</a></li>
-      <li><a href='#tab3'>Funds</a></li>
+      <li><a href='#tab1'>Films</a></li>
+      <li><a href='#tab2'>Récompenses</a></li>
+      <li><a href='#tab3'>Des Fonds</a></li>
     </ul>
 
     <div id='tab1'>
-      <h2> Previously Viewed: </h2>
+      <h2> Précédemment Consulté: </h2>
       <div class="img">
         <img src="images/user-page-images/50ft-woman.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évalué!</h3>
             <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <span>☆</span><span>☆</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span>
             </div>
           </p>
       </div>
@@ -120,7 +102,7 @@
       <div class="img">
         <img src="images/user-page-images/vertigo.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -130,9 +112,9 @@
       <div class="img">
         <img src="images/user-page-images/star-wars.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évalué!</h3>
             <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+           <span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span>
             </div>
           </p>
       </div>
@@ -140,17 +122,7 @@
       <div class="img">
         <img src="images/user-page-images/indiana-jones.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
-            <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-            </div>
-          </p>
-      </div>
-
-      <div class="img">
-        <img src="images/user-page-images/star-wars.jpg" width="300" height="200">
-          <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -160,9 +132,9 @@
       <div class="img">
         <img src="images/user-page-images/lambs.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évalué!</h3>
             <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <span>☆</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span>
             </div>
           </p>
       </div>
@@ -170,7 +142,7 @@
       <div class="img">
         <img src="images/user-page-images/the-thing.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -180,7 +152,7 @@
       <div class="img">
         <img src="images/user-page-images/usual-suspects.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -190,9 +162,9 @@
       <div class="img">
         <img src="images/user-page-images/gone-wind.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évalué!</h3>
             <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span style = "color:gold">&#9733;</span>
             </div>
           </p>
       </div>
@@ -200,7 +172,7 @@
       <div class="img">
         <img src="images/user-page-images/forbidden-planet.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -210,7 +182,7 @@
       <div class="img">
         <img src="images/user-page-images/anatomy-murder.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -220,7 +192,7 @@
       <div class="img">
         <img src="images/user-page-images/back-to-future.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -230,7 +202,7 @@
       <div class="img">
         <img src="images/user-page-images/ET.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -240,7 +212,7 @@
       <div class="img">
         <img src="images/user-page-images/excorist.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -250,27 +222,25 @@
       <div class="img">
         <img src="images/user-page-images/blade-runner.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évalué!</h3>
             <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-            </div>
+           <span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span></div>
           </p>
       </div>
 
       <div class="img">
         <img src="images/user-page-images/pulp-fiction.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évalué!</h3>
             <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-            </div>
+           <span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span></div>
           </p>
       </div>
 
       <div class="img">
         <img src="images/user-page-images/moon.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -280,7 +250,7 @@
       <div class="img">
         <img src="images/user-page-images/metropolis.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évaluez-le!</h3>
             <div class="rating">
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
@@ -290,10 +260,9 @@
       <div class="img">
         <img src="images/user-page-images/jaws.jpg" width="300" height="200">
           <p>
-            <h3>Rate It!</h3>
+            <h3>Évalué!</h3>
             <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-            </div>
+           <span>☆</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span><span style = "color:gold">&#9733;</span></div>
           </p>
       </div>
     </div>
@@ -301,32 +270,32 @@
 
 
     <div id='tab2'>
-      <div id = "fourth">
+      <div id = "third">
       <fieldset>
-        <legend>Add a Rewards Card</legend>
-          Name: <br>
+        <legend>Ajouter une carte de récompenses</legend>
+          Prénom: <br>
           <input type="text" name="Rewards Name">
           <br><br>
-          Card Number: <br>
+          Numéro de carte: <br>
           <input type="text" name="Rewards Card Number">
           <br><br>
-          <input type="submit" value="Add Rewards Card">
+          <input type="submit" value="Ajouter des récompenses">
       </fieldset>
       </div>
     
 
-    <div id = "fifth">
+    <div id = "fourth">
       <table class="rewards-table">
         <thead>
           <tr>
             <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#373636"><span style="color: #ffffff;"><strong>EARN</strong></span></td>
-            <td bgcolor="#373636"><span style="color: #ffffff;"><strong>REDEEM</strong></span></td>
+            <td bgcolor="#373636"><span style="color: #ffffff;"><strong>GAGNER</strong></span></td>
+            <td bgcolor="#373636"><span style="color: #ffffff;"><strong>RACHETER</strong></span></td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td bgcolor="#373636"><span style="color: #ffffff;">Tickets</span></td>
+            <td bgcolor="#373636"><span style="color: #ffffff;">Des Billets</span></td>
             <td bgcolor="#ed1b2e"><span style="color: #ffffff;">100 pts.</span></td>
             <td bgcolor="#ed1b2e"><span style="color: #ffffff;">500 pts.</span></td>
           </tr>
@@ -344,34 +313,34 @@
 
     <div id='tab3'>
       <fieldset>
-        <legend>Add a Payment Card</legend>
-        Cardholder Name: <br>
+        <legend>Ajouter une carte de paiement</legend>
+        Nom du titulaire: <br>
         <input type="text" name="Payment Name">
         <br><br>
-        Card Number: <br>
+        Numéro de carte: <br>
         <input type="text" name="Payment Card Number">
         <br><br>
-        Expiry Date (MMYY): <br>
+        Date d'expiration (MMYY): <br>
         <input type="text" name="Expiry Date">
         <br><br>
-        Security Code: <br>
+        Code de sécurité: <br>
         <input type="text" name="Security Code">
         <br><br>
-        Enable 1-Click Checkout:
+        Activer la validation en un clic:
         <input type="checkbox" name="1-Click Checkout">
         <br><br>
-        <input type="submit" value="Add Payment Card">
+        <input type="submit" value="Ajouter une carte de paiement">
       </fieldset>
 
       <fieldset>
-        <legend>Add a Gift Card</legend>
-        Number: <br>
+        <legend>Ajouter une carte-cadeau</legend>
+        Nombre: <br>
         <input type="text" name="GC Number">
         <br><br>
-        Pin: <br>
+        épingle: <br>
         <input type="text" name="GC Pin">
         <br><br>
-        <input type="submit" value="Add Gift Card">
+        <input type="submit" value="Ajouter carte-cadeau">
       </fieldset>
     </div>
     
