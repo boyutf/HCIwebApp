@@ -171,15 +171,15 @@ header h1 #topNav p {
 #titleBar {
     height: 50px;
     width: 1024px;
-    margin: 0 auto;
-    #margin-left: 100px;
+    #margin: 0 auto;
+    margin-left: 0px;
    
 }
 
 #wrap{
 	width:500px;
-	margin:0 auto;
-   #margin-left: 100px;
+	#margin:0 auto;
+   margin-left: 250px;
 	text-align:left;
 	margin-top:8px;
 	padding:5px;
