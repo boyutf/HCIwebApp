@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Cake Form</title>
+    <script type="text/javascript" src="js/ticket-seat-selection.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="styles/ticket-seat-selection.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='calculateTotal()'>
+
+     <header>
+      <h1>Movie Theatre Company
+      <nav id="topNav">
+      <p> language:
+        <a href="/English/" >English</a> |
+        <a href="/French/">Français</a> |
+      </p>
+         <div class="dropdown" style="float:right; padding:16px;">
+          <div class="login-dropdown">
+          <button class="dropbtn">Bob<span class="arrow">&#9660;</span></button>
+          <div class="dropdown-content" style="Showtimes:0;">
+            <a href="#">Profile</a>
+            <a href="#">Sign Out</a>
+            </div>
+          </div>
+        </div>
+      <!--  <button id = "login_button" onclick="myFunction(0)">login</button>
+        <button id = "signin_button" onclick="myFunction(1)">signup</button> -->
+      </nav>
+      </h1>
+    </header>
+    
+    <h2 id="titleBar">Progress:</h2>
+    
+    <div id="titleBar">
+      <h2>
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton"><a href ="home.html" style ="color:black; text-decoration:none;"><h2>Movie Selection</h2></a></button>
+          
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton"><h2>Theatre</h2></button>
+          
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" style="background-color: #4CAF50;" disabled="disabled"><h2>Tickets and Seats</h2></button>
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" disabled="disabled"><h2>Concession</h2></button>
+        </div>
+        
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" disabled="disabled"><h2>Payment</h2></button>
+        </div>
+        
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" disabled="disabled"><h2>Confirm</h2></button>
+        </div>
+
+      </h2>
+    </div>
+    </br>
+    </br>
+    
+    <div id="wrap">
+        <div>
+            <div class="ticketSelection">
+               <fieldset>
+                <legend>Ticket Selection</legend>
+                <body>Movie Selected: </body>
+                </br>
+                </br>
+                <label >
+                 <div id="container" style="width:100%;">                                   
+                 <div id="left" style="float:left; width:33%;"> Number of Tickets </div>                     
+                 <div id="left" style="float:left; width:33%;"> Ticket Price </div>     
+                 <div id="left" style="float:left; width:33%;"> Ticket Type </div>                     
+               </div>    
+                </label>
+                </br>
+                </br>
+                
+                
+                
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(1);" />
+                <label class='radiolabel'><input type="text"  id="ticket1" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(1);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $10.50/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                General Audience 
+                <div class="tooltip">?
+               <span class="tooltiptext">This ticket type is for general audiences aged 18-60.</span>
+               </div>
+               </div>
+               
+               </br>
+               </br>
+               
+              
+               
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(2);" />
+                <label class='radiolabel'><input type="text"  id="ticket2" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(2);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $8.50/each
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Child Ticket
+                <div class="tooltip">?
+               <span class="tooltiptext">This ticket type is for children aged 17 or under.</span>
+               </div>
+               </div>
+               </div>
+               
+               </br>
+                </br>
+                
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(3);" />
+                <label class='radiolabel'><input type="text"  id="ticket3" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(3);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $8.50/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Senior Ticket
+                <div class="tooltip">?
+               <span class="tooltiptext">This ticket type is for seniors aged 61 or older.</span>
+               </div>
+               </div>
+               </div>
+               </br>
+                </br>
+                
+                <div id="totalPrice" style="display: block;" class>Total Price $0.00</div>
+                
+                </fieldset>
+            </div>
+            
+        	<div class="seatSelection">
+            	<fieldset>
+                <legend>Seat Selection</legend>
+                
+                <label>Legend: </label>
+                <div id="seatSelect" style="width:100%;">
+                   <label id="seat1" class="open"><span>#</span></label>
+                   <span id="legendText">Seat open</span>
+                   </br>
+                   <label id="seat2" class="closed"><span>#</span></label>
+                   <span id="legendText">Seat reserved</span>
+                   </br>
+                   <label id="seat3" class="selected"><span>#</span></label>
+                   <span id="legendText">Seat currently selected</span>
+                   
+               </div>
+               <label>Seats: </label>
+               <input id="autoSeatButton" type="button" value="Automatically Select Seats For Me" onclick="autoSelectSeats();" />
+               </br>
+               </br>
+                <div id="container" style="width:100%;"> 
+                <div id="movieScreen" style="float:left; width:50%;">Movie Screen Here </div>
+                </div>
+                </br>
+                
+                <form>
+                <div id="seatSelect">
+                   <label class="open"><input type="checkbox" name="toggle" value=1 onclick="selectSeat();"><span>1</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=2 onclick="selectSeat();"><span>2</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=3 onclick="selectSeat();"><span>3</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=4 onclick="selectSeat();"><span>4</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=5 onclick="selectSeat();"><span>5</span></label>
+               </div>
+                <div id="seatSelect">
+                   <label class="open"><input type="checkbox" name="toggle" value=6 onclick="selectSeat();"><span>6</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=7 onclick="selectSeat();"><span>7</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=8 onclick="selectSeat();"><span>8</span></label>
+                   <label class="closed"><input type="checkbox" name="toggle" value=9 onclick="selectSeat();" disabled="disabled"><span>9</span></label>
+                   <label class="closed"><input type="checkbox" name="toggle" value=10 onclick="selectSeat();" disabled="disabled"><span>10</span></label>
+               </div>
+                <div id="seatSelect">
+                   <label class="open"><input type="checkbox" name="toggle" value=11 onclick="selectSeat();" ><span>11</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=12 onclick="selectSeat();" ><span>12</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=13 onclick="selectSeat();" ><span>13</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=14 onclick="selectSeat();" ><span>14</span></label>
+                   <label class="closed"><input type="checkbox" name="toggle" value=15 onclick="selectSeat();" disabled="disabled"><span>15</span></label>
+               </div>
+                <div id="seatSelect">
+                   <label class="closed"><input type="checkbox" name="toggle" value=16 onclick="selectSeat();" disabled="disabled"><span>16</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=17 onclick="selectSeat();" ><span>17</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=18 onclick="selectSeat();" ><span>18</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=19 onclick="selectSeat();" ><span>19</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=20 onclick="selectSeat();" ><span>20</span></label>
+               </div>
+                <div id="seatSelect">
+                   <label class="open"><input type="checkbox" name="toggle" value=21 onclick="selectSeat();" ><span>21</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=22 onclick="selectSeat();" ><span>22</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=23 onclick="selectSeat();" ><span>23</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=24 onclick="selectSeat();" ><span>24</span></label>
+                   <label class="closed"><input type="checkbox" name="toggle" value=25 disabled="disabled" onclick="selectSeat();" ><span>25</span></label>
+               </div>
+               </form>
+                </br></br></br>
+                <div id="seatTotal">Seat selected:</div>
+                </fieldset>
+                
+            </div>
+            <input type='submit' id='back' value='back' onclick="" />
+            <input type='submit' style="float:right" id='next' value='next' onclick="calculateTotal()" disabled="disabled"/>
+        </div>  
+	</div><!--End of wrap-->
+
+</body>
+</html>

@@ -1,0 +1,352 @@
+header {
+    
+    height: 125px;
+    width: 1024px;
+    color: #D6D6D6;
+    background-color: #000;
+    font-size: x-large;
+    margin: 0px;
+}
+
+h3{ text-align: center; }
+
+div.container{
+    margin: auto;
+}
+
+#topNav {
+    height: 45px;
+    width: 1024px;
+    font-size: 14px;
+}
+header h1 #topNav p {
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+
+#titleBar h2 .dropdown .dropbtn {
+    width: 200px;
+    height: 50px;
+}
+#titleBar {
+    height: 50px;
+    width: 1024px;
+    margin: 0px;
+   
+}
+
+#login_button{
+    position:relative;
+    top: 60%;
+    left: 87%;
+}
+#signin_button{
+    position:relative;
+    top: 60%;
+    left: 87%;
+}
+
+<!-- style for dropdown menu-->
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.progressButton{
+    height:100px;
+    width:170px;
+    font-size: 12px;
+}
+.progressBar{
+    font-size: 16px;
+    border: none;
+}
+#login-dropdown{
+   position: relative;
+    display: inline-block;
+    padding: 16px; 
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.progressBar-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#wrapper {
+    overflow:auto;
+}
+
+#first {
+    float:left; /* add this */
+}
+#second {
+   
+    float:left; /* add this */
+}
+#fourth {
+    float:left; /* add this */
+    width: 70%;
+}
+#fifth {
+    position:absolute;
+    left:600px; 
+
+   /* padding: 70px; /* move redeem table 
+    float:left;*/
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+#titleBar {
+    height: 50px;
+    width: 1024px;
+    margin: 0 auto;
+    #margin-left: 100px;
+   
+}
+
+#wrap{
+	width:500px;
+	margin:0 auto;
+   #margin-left: 100px;
+	text-align:left;
+	margin-top:8px;
+	padding:5px;
+	background:#fff;
+    font-family:AvenirLTStd, Arial, Helvetica, sans-serif;
+	font-size:13px;    
+    line-height:16px;
+}
+#wrap .seatSelection fieldset,.ticketSelection fieldset{
+	margin:10px;
+	padding:20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+#wrap legend{
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	font-weight:bold;
+	font-style:italic;
+    padding-bottom:10px;
+}
+#wrap .seatSelection input{
+	margin-bottom:10px;
+	color:#000;
+}
+#wrap .input1:hover,.input1:active{
+	
+}
+#wrap label{
+	display:block;
+	font-size:12px;
+	color:#000;
+    font-weight:bold;
+}
+#wrap label.inlinelabel
+{
+    display:inline;
+}
+#wrap .ticketSelection input{
+	margin-bottom:5px;
+}
+#wrap .ticketSelection p{
+	padding-top:5px;
+}
+
+#wrap input[type="radio"]
+{
+margin-top:8px;
+margin-bottom:8px;
+}
+
+#wrap input[type="text"]:hover,
+#wrap input[type="text"]:active {
+background-color: #FAF398;
+}
+
+#wrap input#back
+{
+margin:10px;
+padding-left:20px;
+padding-right:20px;
+padding-top:10px;
+padding-bottom:10px;
+}
+#wrap input#next
+{
+margin:10px;
+padding-left:20px;
+padding-right:20px;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+#wrap div#totalPrice
+{
+    padding:10px;
+    font-weight:bold;
+    background-color:#ff0;
+    display:block;
+}
+
+#wrap label.radiolabel
+{
+font-weight:normal;
+ display:inline;
+}
+
+.square{
+   text-align:center;
+    width:30px;
+    height:30px;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    
+}
+
+body {
+    font-family:sans-serif;
+}
+
+#seatTitle {
+    margin:12px;
+}
+#seatTotal {
+   padding:10px;
+   font-weight:bold;
+   background-color:#ff0;
+}
+
+#seatSelect {
+    margin:4px;
+}
+
+#legendText{
+   font-size:16px;
+   position:relative;
+   bottom:14px;
+}
+
+#movieScreen{
+   border: 1px solid green ;
+   text-align: center;
+}
+
+#seatSelect label {
+    display:inline-block;
+    width:30px;
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+       
+}
+
+#seatSelect label span {
+    text-align:center;
+    font-size: 14px;
+    padding:8px 0px;
+    display:block;
+}
+
+#seatSelect label input {
+    display: none;
+}
+
+#seatSelect input:checked + span {
+    background-color:#404040;
+    color:#F7F7F7;
+}
+
+#seatSelect .open {
+    background-color:#A3D900;
+    color:#333;
+}
+
+#seatSelect .closed {
+    background-color:#FF99FF;
+    color:#333;
+}
+
+#seatSelect .selected {
+    background-color:#404040;
+    color:#F7F7F7;
+}

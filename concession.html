@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Cake Form</title>
+    <script type="text/javascript" src="js/concession.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="styles/concession.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='calculateTotal()'>
+
+     <header>
+      <h1>Movie Theatre Company
+      <nav id="topNav">
+      <p> language:
+        <a href="/English/" >English</a> |
+        <a href="/French/">Français</a> |
+      </p>
+         <div class="dropdown" style="float:right; padding:16px;">
+          <div class="login-dropdown">
+          <button class="dropbtn">Bob<span class="arrow">&#9660;</span></button>
+          <div class="dropdown-content" style="Showtimes:0;">
+            <a href="#">Profile</a>
+            <a href="#">Sign Out</a>
+            </div>
+          </div>
+        </div>
+      <!--  <button id = "login_button" onclick="myFunction(0)">login</button>
+        <button id = "signin_button" onclick="myFunction(1)">signup</button> -->
+      </nav>
+      </h1>
+    </header>
+    
+    <h2 id="titleBar">Progress:</h2>
+    
+    <div id="titleBar">
+      <h2>
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton"><a href ="home.html" style ="color:black; text-decoration:none;"><h2>Movie Selection</h2></a></button>
+          
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton"><h2>Theatre</h2></button>
+          
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton"><h2>Tickets and Seats</h2></button>
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" disabled="disabled" style="background-color: #4CAF50;"><h2>Concession</h2></button>
+        </div>
+        
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" disabled="disabled"><h2>Payment</h2></button>
+        </div>
+        
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" disabled="disabled"><h2>Confirm</h2></button>
+        </div>
+
+      </h2>
+    </div>
+    </br>
+    </br>
+    
+    <div id="wrap">
+        <div>
+            <div class="ticketSelection">
+               <fieldset>
+                <legend>Concession Selection</legend>
+                <label >
+                 <div id="container" style="width:100%;">                                   
+                 <div id="left" style="float:left; width:33%;"> Quantity </div>                     
+                 <div id="left" style="float:left; width:33%;"> Concession Price </div>     
+                 <div id="left" style="float:left; width:33%;"> Concession Type </div>                     
+               </div>    
+                </label>
+                </br>
+                </br>
+                
+                
+                
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(1);" />
+                <label class='radiolabel'><input type="text"  id="concession1" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(1);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $1.50/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Small Popcorn 
+               </div>
+               
+               </br>
+               </br>
+               
+              
+               
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(2);" />
+                <label class='radiolabel'><input type="text"  id="concession2" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(2);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $2.50/each
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Medium Popcorn
+               </div>
+               </div>
+               
+               </br>
+               </br>
+                
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(3);" />
+                <label class='radiolabel'><input type="text"  id="concession3" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(3);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $3.50/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Large Popcorn
+               </div>
+               </div>
+               </br>
+                </br>
+                
+                
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(4);" />
+                <label class='radiolabel'><input type="text"  id="concession4" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(4);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $1.00/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Small Drink
+               </div>
+               </div>
+               </br>
+                </br>
+                
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(5);" />
+                <label class='radiolabel'><input type="text"  id="concession5" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(5);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $2.00/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Medium Drink
+               </div>
+               </div>
+               </br>
+                </br>
+
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(6);" />
+                <label class='radiolabel'><input type="text"  id="concession6" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(6);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $3.00/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Large Drink
+               </div>
+               </div>
+               </br>
+                </br>
+                
+                
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(7);" />
+                <label class='radiolabel'><input type="text"  id="concession7" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(7);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $2.00/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Chocolate Bar
+               </div>
+               </div>
+               </br>
+                </br>
+                
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(8);" />
+                <label class='radiolabel'><input type="text"  id="concession8" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(8);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $4.50/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Combo: Medium Popcorn, Medium Drink, Chocolate Bar
+               </div>
+               </div>
+               </br>
+                </br>
+                
+                <div id="container" style="width:100%;"> 
+                <div id="left" style="float:left; width:33%;">
+                <input id="btnSubtract" type="button" value="-" onclick="subtract(9);" />
+                <label class='radiolabel'><input type="text"  id="concession9" value="0" onchange="calculateTotal()" maxlength="4" size="3" /></label>
+                <input id="btnAdd" type="button" value="+" onclick="add(9);" />
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                $7.00/each 
+                </div>
+                
+                <div id="left" style="float:left; width:33%;">
+                Combo: Large Popcorn, Large Drink, Chocolate Bar
+               </div>
+               </div>
+               </br>
+                </br>
+                
+                
+                <div id="totalPrice" style="display: block;" class>Total Price $0.00</div>
+                
+                </fieldset>
+            </div>
+            
+            <input type='submit' id='back' value='back' onclick="" />
+            <input type='submit' style="float:right" id='next' value='next' onclick="calculateTotal()" disabled="disabled"/>
+        </div>  
+	</div><!--End of wrap-->
+
+</body>
+</html>
