@@ -1,12 +1,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Concession Selection</title>
-    <script type="text/javascript" src="scripts/concession.js"></script>
+    <script type="text/javascript" src="scripts/concession.js">
+}
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="styles/concession.css" rel="stylesheet" type="text/css" />
 </head>
 <body onload='calculateTotal()'>
-
      <header>
       <h1>Movie Theatre Company
       <nav id="topNav">
@@ -254,7 +255,11 @@
             </div>
             
             <input type='submit' id='back' value='back' onclick="" />
-            <input type='submit' style="float:right" id='next' value='next' onclick="calculateTotal()" disabled="disabled"/>
+
+             <FORM name="frm" METHOD="get" ACTION="get.html" onsubmit="return foo()"> 
+            <INPUT TYPE="hidden" id="hid" name="hid"> 
+            <input type='submit' style="float:right" id='next' value='next' onclick="move()" disabled="disabled"/>
+            </Form>
         </div>  
 	</div><!--End of wrap-->
 

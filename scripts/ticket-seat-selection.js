@@ -4,10 +4,18 @@ NUM_SEATS = 25;
 
 var currentNumTickets=0;
 var currentNumSeats=0;
+var total=0;
 
 NUM_TICKET_OPTIONS=3;
 var ticketPrices = [10.5, 8.5, 8.5];
-        
+
+    var a=location.search;
+    a=a.replace('%3A',':');
+    a=a.replace('+','.');
+    a=a.replace('+',' ');
+    a=a.replace('+',' ');
+    document.write("Your selection is: "+a.substr(5));
+
 function calculateTotal()
 {
     //Here we get the total price by calling our function
@@ -75,7 +83,7 @@ function calculateTotal()
        document.getElementById("next").disabled = true;
     }
     selectSeat();
-
+    total=ticketPrice;
 }
 
 function add(num)
@@ -188,3 +196,17 @@ function autoSelectSeats()
    }
    selectSeat();
 }
+
+
+function move(){
+
+  window.location.href = "ticket-seat-selection.html";
+}
+
+function foo(){ 
+  
+        var str = total;
+        var frm = window.event.srcElement; 
+        frm.hid.value = str; 
+        return true; 
+ }

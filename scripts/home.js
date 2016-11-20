@@ -27,10 +27,32 @@ function signup() {
   
 }
 var timestore="";
+
 function buy(num){
+
   var time=document.getElementById("time1").value;
-   alert("Are you sure you want to buy movie: "+document.getElementById("Movie"+num.toString()+"title").innerHTML+" at time: "+timestore+"?");
+  alert("Are you sure you want to buy movie: "+document.getElementById("Movie"+num.toString()+"title").innerHTML+" at time: "+timestore+"?");
+  move();
+  /*var str=document.getElementById("Movie"+num.toString()+"title").innerHTML+" "+timestore;
+  var frm = window.event.srcElement; 
+        frm.hid.value = str; 
+        return true; */
+
 }
+
+function move(){
+  window.location.href = "ticket-seat-selection.html";
+}
+
+function foo(num){ 
+  
+        var str = document.getElementById("Movie"+num.toString()+"title").innerHTML+" "+timestore; 
+        //document.forms[0].hid.value = str; 
+  
+        var frm = window.event.srcElement; 
+        frm.hid.value = str; 
+        return true; 
+ }
 
 function test(time) {
 var sub=time.substring(0,1);

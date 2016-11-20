@@ -1,0 +1,19 @@
+<HTML> 
+  <HEAD> 
+    <TITLE> New Document </TITLE> 
+  </HEAD> 
+  <BODY> 
+
+    <SCRIPT LANGUAGE="JavaScript"> 
+
+
+    var a=location.search;
+    a=a.replace('%3A',':');
+    //a=a.replace('+','.');
+    a=a.replace('+',' ');
+    a=a.replace('+',' ');
+    document.write("Your concession price is: "+a.substr(5,4)+"  Your ticket price is: "+a.substr(10));
+  
+    </SCRIPT> 
+  </BODY> 
+</HTML>

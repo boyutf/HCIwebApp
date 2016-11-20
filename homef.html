@@ -49,7 +49,7 @@ Entreprise De Cinéma</p1>
 </div>
 
 <div class="dropdown" style="float:left;">
-  <button style="font-size : 20px; width: 100%; height: 40px;">Bande annonce</button>
+  <button style="font-size : 20px; width: 100%; height: 40px;"><a href ="trailers-french.html">Bande annonce</a></button>
 </div>
 
 <div class="dropdown" style="float:left;">
@@ -111,7 +111,7 @@ Comédie</option>
       </div>
   
 <div class="dropdown2-content" id="myDropdown2">
-  <form action="">
+
   Tuesday <input type="radio" id="time1" name="time" onclick="test(this.value)" value="111:00am" > 11:00am 
   <input type="radio" name="time" onclick="test(this.value)" value="11:00pm" > 1:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="17:00pm" > 7:00pm<br>
@@ -122,8 +122,12 @@ Comédie</option>
   <input type="radio" name="time" onclick="test(this.value)" value="15:00pm" > 5:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="16:30pm" > 6:30pm<br>
   Your selected time is: <input type="text" id="result1">
+
+  <FORM name="frm" METHOD="get" ACTION="ticket-seat-selection.html" onsubmit="return foo(1)"> 
+  <INPUT TYPE="hidden" id="hid" name="hid"> 
   <input type="submit" onclick="buy(1)" value="Buy it">
-</form>
+  </FORM>
+
    </div>
     </section><!--movie 1 section-->
     
@@ -145,7 +149,7 @@ Comédie</option>
       </div>
           
     <div class="dropdown3-content" id="myDropdown3">
-     <form action="">
+
   Monday <input type="radio" name="time" onclick="test(this.value)" value="211:00am" >11:00am 
   <input type="radio" name="time" onclick="test(this.value)" value="21:00pm" > 1:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="27:00pm" > 7:00pm<br>
@@ -156,8 +160,12 @@ Comédie</option>
   <input type="radio" name="time" onclick="test(this.value)" value="25:00pm" > 5:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="26:30pm" > 6:30pm<br>
   Your selected time is: <input type="text" id="result2">
+
+ <FORM name="frm" METHOD="get" ACTION="ticket-seat-selection.html" onsubmit="return foo(2)"> 
+  <INPUT TYPE="hidden" id="hid" name="hid"> 
   <input type="submit" onclick="buy(2)" value="Buy it">
-</form>
+  </FORM>
+
 
       </div>
     </div>
@@ -181,7 +189,7 @@ Comédie</option>
       </div>
           
     <div class="dropdown4-content" id="myDropdown4">
-     <form action="">
+  
  Monday <input type="radio" name="time" onclick="test(this.value)" value="311:00am" > 11:00am 
   <input type="radio" name="time" onclick="test(this.value)" value="31:00pm" > 1:00pm 
   <input type="radio" name="time" onclick="test(this.value)" value="37:00pm" > 7:00pm<br>
@@ -195,8 +203,12 @@ Comédie</option>
   <input type="radio" name="time" onclick="test(this.value)" value="36:30pm" > 6:30pm<br>
 
   Your selected time is: <input type="text" id="result3">
-  <input type="submit" onclick="buy(3)" value="Buy it">
-</form>
+
+  <FORM name="frm" METHOD="get" ACTION="ticket-seat-selection.html" onsubmit="return foo(2)"> 
+  <INPUT TYPE="hidden" id="hid" name="hid"> 
+  <input type="submit" onclick="buy(2)" value="Buy it">
+  </FORM>
+
 
       </div>
     </div>

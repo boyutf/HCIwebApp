@@ -4,7 +4,17 @@ TOTAL_CONCESSIONS = 9;
 
 var currentNumconcessions=0;
 var concessionPrices = [1.5, 2.5, 3.5, 1, 2, 3, 2, 4.5, 7];
-        
+var total=0;
+var a=location.search;
+    a=a.replace('%3A',':');
+    a=a.replace('+','.');
+    a=a.replace('+',' ');
+    a=a.replace('+',' ');
+    document.write("Your ticket price is: "+a.substr(5));
+    var prev=a.substr(5);
+  //  alert()
+
+
 function calculateTotal()
 {
     //Here we get the total price by calling our function
@@ -58,6 +68,8 @@ function calculateTotal()
        document.getElementById("next").disabled = true;
     }
 
+    total=concessionPrice;
+
 }
 
 function add(num)
@@ -77,3 +89,16 @@ function subtract(num)
    document.getElementById( "concession"+num ).value = numconcessions;
    calculateTotal();
 }
+
+function move(){
+
+  window.location.href = "ticket-seat-selection.html";
+}
+
+function foo(){ 
+
+        var str = total+"  "+prev;
+        var frm = window.event.srcElement; 
+        frm.hid.value = str; 
+        return true; 
+ }
