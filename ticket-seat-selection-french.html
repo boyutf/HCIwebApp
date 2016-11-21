@@ -1,7 +1,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Ticket/Seat Selection</title>
-    <script type="text/javascript" src="scripts/ticket-seat-selection.js"></script>
+    <script type="text/javascript" src="scripts/ticket-seat-selection-french.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="styles/ticket-seat-selection.css" rel="stylesheet" type="text/css" />
 
@@ -20,8 +20,8 @@
           <div class="login-dropdown">
           <button class="dropbtn">Bob<span class="arrow">&#9660;</span></button>
           <div class="dropdown-content" style="Showtimes:0;">
-            <a href="user-page-english.html">Profile</a>
-            <a href="#">Sign Out</a>
+            <a href="user-page-french.html">Profil</a>
+            <a href="#">Se Déconnecter</a>
             </div>
           </div>
         </div>
@@ -30,34 +30,34 @@
       </nav>
       </h1>
     </header>
-    <h2 id="titleBar">Progress: </h2>
+    <h2 id="titleBar">La progression: </h2>
     
     <div id="titleBar">
       <h2>
         <div class="progressBar" style="float:left;">
-          <button class="progressButton" onclick="window.location.href='home.html'"><h2>Movie Selection</h2></button>
+          <button class="progressButton" onclick="window.location.href='homef.html'"><h2>Sélection du film</h2></button>
           
         </div>
 
         <div class="progressBar" style="float:left;">
-          <button class="progressButton" onclick="window.location.href='theatres-english.html'"><h2>Theatre</h2></button>
+          <button class="progressButton" onclick="window.location.href='theatres-french.html'"><h2>Théâtre</h2></button>
           
         </div>
 
         <div class="progressBar" style="float:left;">
-          <button class="progressButton" onclick="window.location.href='ticket-seat-selection.html'" style="background-color: #4CAF50;" disabled="disabled"><h2>Tickets and Seats</h2></button>
+          <button class="progressButton" onclick="window.location.href='ticket-seat-selection-french.html'" style="background-color: #4CAF50;" disabled="disabled"><h2>Billets et sièges</h2></button>
         </div>
 
         <div class="progressBar" style="float:left;">
-          <button class="progressButton" onclick="window.location.href='concession.html'" disabled="disabled"><h2>Concession</h2></button>
+          <button class="progressButton" onclick="window.location.href='concession-french.html'" disabled="disabled"><h2>Concession</h2></button>
         </div>
         
         <div class="progressBar" style="float:left;">
-          <button class="progressButton" onclick="window.location.href='payment.html'" disabled="disabled"><h2>Payment</h2></button>
+          <button class="progressButton" onclick="window.location.href='payment-french.html'" disabled="disabled"><h2>Paiement</h2></button>
         </div>
         
         <div class="progressBar" style="float:left;">
-          <button class="progressButton" onclick="window.location.href='confirm.html'" disabled="disabled"><h2>Confirm</h2></button>
+          <button class="progressButton" onclick="window.location.href='confirm-french.html'" disabled="disabled"><h2>Confirmer</h2></button>
         </div>
 
       </h2>
@@ -69,15 +69,15 @@
         <div>
             <div class="ticketSelection">
                <fieldset>
-                <legend>Ticket Selection</legend>
-                <body>Movie Selected: </body>
+                <legend>Sélection de billets:</legend>
+                <body>Film sélectionné: </body>
                 </br>
                 </br>
                 <label >
                  <div id="container" style="width:100%;">                                   
-                 <div id="left" style="float:left; width:33%;"> Number of Tickets </div>                     
-                 <div id="left" style="float:left; width:33%;"> Ticket Price </div>     
-                 <div id="left" style="float:left; width:33%;"> Ticket Type </div>                     
+                 <div id="left" style="float:left; width:33%;"> Nombre de billets </div>                     
+                 <div id="left" style="float:left; width:33%;"> Le prix du ticket </div>     
+                 <div id="left" style="float:left; width:33%;"> Type de billet </div>                     
                </div>    
                 </label>
                 </br>
@@ -92,13 +92,13 @@
                 </div>
                 
                 <div id="left" style="float:left; width:33%;">
-                $10.50/each 
+                $10.50/pièce 
                 </div>
                 
                 <div id="left" style="float:left; width:33%;">
-                General Audience 
+                Audience générale
                 <div class="tooltip">?
-               <span class="tooltiptext">This ticket type is for general audiences aged 18-60.</span>
+               <span class="tooltiptext">Ce type de billet est destiné aux publics de 18 à 60 ans.</span>
                </div>
                </div>
                
@@ -115,13 +115,13 @@
                 </div>
                 
                 <div id="left" style="float:left; width:33%;">
-                $8.50/each
+                $8.50/pièce
                 </div>
                 
                 <div id="left" style="float:left; width:33%;">
-                Child Ticket
+                Billet enfant
                 <div class="tooltip">?
-               <span class="tooltiptext">This ticket type is for children aged 17 or under.</span>
+               <span class="tooltiptext">Ce type de billet est destiné aux enfants âgés de 17 ans et moins.</span>
                </div>
                </div>
                </div>
@@ -137,46 +137,46 @@
                 </div>
                 
                 <div id="left" style="float:left; width:33%;">
-                $8.50/each 
+                $8.50/pièce 
                 </div>
                 
                 <div id="left" style="float:left; width:33%;">
-                Senior Ticket
+                Billets Senior
                 <div class="tooltip">?
-               <span class="tooltiptext">This ticket type is for seniors aged 61 or older.</span>
+               <span class="tooltiptext">Ce type de billet est destiné aux personnes âgées de 61 ans et plus.</span>
                </div>
                </div>
                </div>
                </br>
                 </br>
                 
-                <div id="totalPrice" style="display: block;" class>Total Price $0.00</div>
+                <div id="totalPrice" style="display: block;" class>Prix total $0.00</div>
                 
                 </fieldset>
             </div>
             
         	<div class="seatSelection">
             	<fieldset>
-                <legend>Seat Selection</legend>
+                <legend>Sélection du siège</legend>
                 
-                <label>Legend: </label>
+                <label>Légende: </label>
                 <div id="seatSelect" style="width:100%;">
                    <label id="seat1" class="open"><span>#</span></label>
-                   <span id="legendText">Seat open</span>
+                   <span id="legendText">Siège ouvert</span>
                    </br>
                    <label id="seat2" class="closed"><span>#</span></label>
-                   <span id="legendText">Seat reserved</span>
+                   <span id="legendText">Siège réservé</span>
                    </br>
                    <label id="seat3" class="selected"><span>#</span></label>
-                   <span id="legendText">Seat currently selected</span>
+                   <span id="legendText">Siège actuellement sélectionné</span>
                    
                </div>
-               <label>Seats: </label>
-               <input id="autoSeatButton" type="button" value="Automatically Select Seats For Me" onclick="autoSelectSeats();" />
+               <label>Des places: </label>
+               <input id="autoSeatButton" type="button" value="Sélectionnez automatiquement les sièges pour moi" onclick="autoSelectSeats();" />
                </br>
                </br>
                 <div id="container" style="width:100%;"> 
-                <div id="movieScreen" style="float:left; width:50%;">Movie Screen Here </div>
+                <div id="movieScreen" style="float:left; width:50%;">Écran de film ici </div>
                 </div>
                 </br>
                 
@@ -218,15 +218,15 @@
                </div>
                </form>
                 </br></br></br>
-                <div id="seatTotal">Seat selected:</div>
+                <div id="seatTotal">Siège sélectionné:</div>
                 </fieldset>
                 
             </div>
-            <input type='submit' style="float:left;" id='back' value='back' onclick="window.location.href='theatres-english.html'" />
+            <input type='submit' style="float:left;" id='back' value='arrière' onclick="window.location.href='theatres-french.html'" />
 
-            <FORM name="frm" METHOD="get" ACTION="concession.html" onsubmit="return foo()"> 
+            <FORM name="frm" METHOD="get" ACTION="concession-french.html" onsubmit="return foo()"> 
             <INPUT TYPE="hidden" id="hid" name="hid"> 
-            <input type='submit' style="float:right;" id='next' value='next' onclick="move()" disabled="disabled"/>
+            <input type='submit' style="float:right;" id='next' value='prochain' onclick="move()" disabled="disabled"/>
             </Form>
         </div>  
 	</div><!--End of wrap-->

@@ -58,7 +58,7 @@ header h1 #topNav p {
     cursor: pointer;
 }
 .progressButton{
-    height:100px;
+    height:50px;
     width:170px;
     font-size: 12px;
 }
