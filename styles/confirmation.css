@@ -1,0 +1,314 @@
+header {
+    position:relative;
+    height: 125px;
+    width: 1024px;
+    color: #D6D6D6;
+    background-color: #000;
+    font-size: x-large;
+    margin: 0px;
+}
+
+.lang-options{ position:absolute; top: 6px;
+    right: 16px; color:white; text-decoration:none; }
+.lang-options-link{color:white; text-decoration:none; }
+h3{ text-align: center; }
+
+div.container{
+    margin: auto;
+}
+
+#topNav {
+    height: 45px;
+    width: 1024px;
+    font-size: 16px;
+}
+header h1 #topNav {
+    top: 0px;
+    right: 100px;
+}
+
+#titleBar h2 .dropdown .dropbtn {
+    width: 200px;
+    height: 50px;
+}
+#titleBar {
+    height: 50px;
+    width: 1024px;
+    margin: 0px;
+   
+}
+
+#titleBar {
+    height: 50px;
+    width: 1024px;
+    #margin: 0 auto;
+    margin-left: 0px;
+   
+}
+
+#login_button{
+    position:relative;
+    top: 60%;
+    left: 87%;
+}
+#signin_button{
+    position:relative;
+    top: 60%;
+    left: 87%;
+}
+
+<!-- style for dropdown menu-->
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.login{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    width:100%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #D3D3D3;
+}
+
+#wrapper {
+    #overflow:auto;
+    margin-left: 275px;
+    padding-top: 20px;
+}
+
+.progressButton{
+    height:100px;
+    width:170px;
+    font-size: 12px;
+}
+/** page layout **/
+#first {
+    float:left; /* add this */
+}
+#second {
+   
+    float:left; /* add this */
+}
+#third {
+    float:left; /* add this */
+    width: 70%;
+}
+#fourth {
+    position:absolute;
+    left:600px; 
+
+   /* padding: 70px; /* move redeem table 
+    float:left;*/
+}
+
+
+/* rewards table, stats table, tabls inputs **/
+fieldset{
+    width:60%;
+}
+input[type=text]{ width: 90%; }
+#giftCard{
+    float: left;
+}
+
+.rewards-table {
+    right: 100px;
+    width: 100%;
+    padding: 20px;
+}
+.stats-table{
+    margin:auto;
+    width:100%;
+}
+
+#wrapper input#back
+{
+margin:10px;
+padding-left:20px;
+padding-right:20px;
+padding-top:10px;
+padding-bottom:10px;
+}
+#wrapper input#next
+{
+margin:10px 300px;
+padding-left:20px;
+padding-right:20px;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+#wrap {
+   width:300px;
+   margin:0 50px;
+}
+#left_col {
+   float:left;
+   width:150px;
+   overflow:hidden;
+   display:inline-block;
+}
+#right_col {
+   float:right;
+   width:150px;
+   overflow:hidden;
+   display:inline-block;
+}
+
+/* tabs */
+.tabs{
+    
+    width:900px;
+    margin:0;
+}
+#tab1{
+    height:900px;
+    overflow: scroll;
+}
+
+#tab1, #tab2, #tab3 { 
+
+
+    width:700px;
+    margin:0;
+
+}
+
+#tab2, #tab3{padding: 10px;}
+.tabs li {
+    list-style:none;
+    display:inline;
+}
+
+.tabs a {
+    margin:0 auto;
+    padding:5px;
+    color:black;
+    text-decoration:none;
+    font-size: 20px;
+    margin-right: -4px;
+    border-bottom-style:solid;
+}
+
+.tabs a.active {
+    border-top-style:solid;
+    border-right-style: solid;
+    border-left-style:solid;
+    border-bottom-style:hidden;
+    background:#FFFFFF;
+    color:black;
+}
+
+#seatTitle {
+    margin:12px;
+}
+#seatTotal {
+   padding:10px;
+   font-weight:bold;
+   background-color:#ff0;
+}
+
+#seatSelect {
+    margin:4px;
+}
+
+#legendText{
+   font-size:16px;
+   position:relative;
+   bottom:14px;
+}
+
+#movieScreen{
+   border: 1px solid green ;
+   text-align: center;
+}
+
+#seatSelect label {
+    display:inline-block;
+    width:30px;
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+       
+}
+
+#seatSelect label span {
+    text-align:center;
+    font-size: 14px;
+    padding:8px 0px;
+    display:block;
+}
+
+#seatSelect label input {
+    display: none;
+}
+
+#seatSelect input:checked + span {
+    background-color:#404040;
+    color:#F7F7F7;
+}
+
+#seatSelect .open {
+    background-color:#A3D900;
+    color:#333;
+}
+
+#seatSelect .closed {
+    background-color:#FF99FF;
+    color:#333;
+}
+
+#seatSelect .selected {
+    background-color:#404040;
+    color:#F7F7F7;
+}
+#wrap .seatSelection fieldset,.ticketSelection fieldset{
+	margin:10px;
+	padding:20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+#wrap .seatSelection input{
+	margin-bottom:10px;
+	color:#000;
+}

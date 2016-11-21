@@ -1,0 +1,205 @@
+<DOCTYPE! html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="styles/confirmation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Movie Theatre Company</title>
+  </head>
+  <body> 
+  <div id = "container">
+    <header>
+      <h1>Movie Theatre Company
+      <nav id="topNav">
+      <div class = "lang-options">
+        <p> <!--language:
+        <a href="/English/" >English</a>--> |
+        <a class = "lang-options-link" href="user-page-french.html">Français</a> |
+      </div>
+   
+          <div class="dropdown" style="float:right; padding:16px;">
+          <button class="dropbtn login">Bob <span class="arrow">&#9660;</span></button>
+          <div class="dropdown-content login">
+            <a href="user-page-english.html">Profile</a>
+            <a href="">Sign Out</a>
+            </div>
+          </div>
+      </nav>
+      </h1>
+    </header>
+
+    <div id="titleBar">
+      <h2>
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" onclick="window.location.href='home.html'"><h2>Movie Selection</h2></button>
+          
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" onclick="window.location.href='theater.html'"><h2>Theatre</h2></button>
+          
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" onclick="window.location.href='ticket-seat-selection.html'"><h2>Tickets and Seats</h2></button>
+        </div>
+
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" onclick="window.location.href='concession.html'"><h2>Concession</h2></button>
+        </div>
+        
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" onclick="window.location.href='payment.html'"><h2>Payment</h2></button>
+        </div>
+        
+        <div class="progressBar" style="float:left;">
+          <button class="progressButton" style="background-color: #4CAF50;" onclick="window.location.href='confirmation.html'" disabled="disabled"><h2>Confirm</h2></button>
+        </div>
+
+      </h2>
+    </div>
+    
+<div id = "wrapper">
+   <div>
+    <div id='tab3'>
+      <fieldset>
+        <h2>Movie Selected:</h2>
+        <p>Dr. Strange</p>
+        <p>Saturday 5:00pm</p>
+        <p>Cineplex Theater, 123 Red Street, Winnipeg MB</p>
+      </fieldset>
+        
+      <fieldset>
+        <h2>Ticket(s) Selected:</h2>
+        <div id="wrap">
+        <div id="left_col">
+            <p>2 General Ticket</p>
+            <p>1 Child Ticket</p>
+            </br>
+            <p>Total:</p>
+        </div>
+        <div id="right_col">
+           <p>$21.00</p>
+           <p>$8.50</p>
+           </br>
+           <p>$29.50</p>
+         </div>
+         </div>
+      </fieldset>
+        
+      <fieldset>
+        <h2>Seat(s) Selected:</h2>
+                <label>Legend: </label>
+                <div id="seatSelect" style="width:100%;">
+                   <label id="seat1" class="open"><span>#</span></label>
+                   <span id="legendText">Seat open</span>
+                   </br>
+                   <label id="seat2" class="closed"><span>#</span></label>
+                   <span id="legendText">Seat reserved</span>
+                   </br>
+                   <label id="seat3" class="selected"><span>#</span></label>
+                   <span id="legendText">Seat currently selected</span>
+                   
+               </div>
+                <div id="container" style="width:100%;"> 
+                <div id="movieScreen" style="float:left; width:50%;">Movie Screen Here </div>
+                </div>
+                </br>
+                <form>
+                <div id="seatSelect">
+                   <label class="open"><input type="checkbox" name="toggle" value=1 onclick="selectSeat();" disabled="disabled"><span>1</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=2 onclick="selectSeat();" disabled="disabled"><span>2</span></label>
+                   <label class="selected"><input type="checkbox" name="toggle" value=3 onclick="selectSeat();" disabled="disabled"><span>3</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=4 onclick="selectSeat();" disabled="disabled"><span>4</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=5 onclick="selectSeat();" disabled="disabled"><span>5</span></label>
+               </div>
+                <div id="seatSelect">
+                   <label class="open"><input type="checkbox" name="toggle" value=6 onclick="selectSeat();" disabled="disabled"><span>6</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=7 onclick="selectSeat();" disabled="disabled"><span>7</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=8 onclick="selectSeat();" disabled="disabled"><span>8</span></label>
+                   <label class="closed"><input type="checkbox" name="toggle" value=9 onclick="selectSeat();" disabled="disabled"><span>9</span></label>
+                   <label class="closed"><input type="checkbox" name="toggle" value=10 onclick="selectSeat();" disabled="disabled"><span>10</span></label>
+               </div>
+                <div id="seatSelect">
+                   <label class="selected"><input type="checkbox" name="toggle" value=11 onclick="selectSeat();" disabled="disabled"><span>11</span></label>
+                   <label class="selected"><input type="checkbox" name="toggle" value=12 onclick="selectSeat();" disabled="disabled"><span>12</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=13 onclick="selectSeat();" disabled="disabled"><span>13</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=14 onclick="selectSeat();" disabled="disabled"><span>14</span></label>
+                   <label class="closed"><input type="checkbox" name="toggle" value=15 onclick="selectSeat();" disabled="disabled"><span>15</span></label>
+               </div>
+                <div id="seatSelect">
+                   <label class="closed"><input type="checkbox" name="toggle" value=16 onclick="selectSeat();" disabled="disabled"><span>16</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=17 onclick="selectSeat();" disabled="disabled"><span>17</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=18 onclick="selectSeat();" disabled="disabled"><span>18</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=19 onclick="selectSeat();" disabled="disabled"><span>19</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=20 onclick="selectSeat();" disabled="disabled"><span>20</span></label>
+               </div>
+                <div id="seatSelect">
+                   <label class="open"><input type="checkbox" name="toggle" value=21 onclick="selectSeat();" disabled="disabled"><span>21</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=22 onclick="selectSeat();" disabled="disabled"><span>22</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=23 onclick="selectSeat();" disabled="disabled"><span>23</span></label>
+                   <label class="open"><input type="checkbox" name="toggle" value=24 onclick="selectSeat();" disabled="disabled"><span>24</span></label>
+                   <label class="closed"><input type="checkbox" name="toggle" value=25 disabled="disabled" onclick="selectSeat();" ><span>25</span></label>
+               </div>
+               </form>
+      </fieldset>
+        
+      <fieldset>
+        <h2>Concession Selected:</h2>
+        <div id="wrap">
+        <div id="left_col">
+            <p>2 Medium Popcorn</p>
+            <p>1 Large Drink</p>
+            <p>1 Combo: Medium Popcorn, Medium Drink, Chocolate Bar</p>
+            </br>
+            <p>Total:</p>
+        </div>
+        <div id="right_col">
+           <p>$5.00</p>
+           <p>$3.00</p>
+           <p>$4.50</p>
+           </br>
+           </br>
+           </br>
+           <p>$12.50</p>
+         </div>
+         </div>
+      </fieldset>
+        
+      <fieldset>
+        <h2>Total Price:</h2>
+        <div id="wrap">
+        <div id="left_col">
+            <p>Tickets:</p>
+            <p>Concession:</p>
+            <p>Tax:</p>
+            </br>
+            <p>Total:</p>
+        </div>
+        <div id="right_col">
+           <p>$29.50</p>
+           <p>$12.50</p>
+           <p>$5.88</p>
+           </br>
+           <p>$47.88</p>
+         </div>
+         </div>
+      </fieldset>
+        
+      <fieldset>
+        <h2>Payment Method:</h2>
+        <p>Gift Card Redeemed: $20</p>
+        <p>Credit Card ending in xxxx1234</p>
+      </fieldset>
+    </div>
+    <br><br>
+    <input type='submit' style="float:left;" id='back' value='back' onclick="window.location.href='payment.html'" />
+    <form method="get" action="home.html">
+    <input type='submit' id='next' value='Confirm Order' onclick="confirmOrder()" href="home.html"/>
+    </form>
+    </div>
+</div>
+    <script src="scripts/confirmation.js"></script>
+    <script src="scripts/user-page.js"></script>
+  
+  </body>
+  </html>
