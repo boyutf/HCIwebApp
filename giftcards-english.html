@@ -1,0 +1,117 @@
+<DOCTYPE! html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="styles/giftcards.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Movie Theatre Company</title>
+  </head>
+  <body> 
+  <div id = "container">
+    <header>
+      <h1>Movie Theatre Company
+      <nav id="topNav">
+      <div class = "lang-options">
+        <p> <!--language:
+        <a href="/English/" >English</a>--> |
+        <a class = "lang-options-link" href="giftcards-french.html">Français</a> |
+      </div>
+   
+          <div class="dropdown" style="float:right; padding:16px;">
+          <button class="dropbtn login">Bob <span class="arrow">&#9660;</span></button>
+          <div class="dropdown-content login">
+            <a href="user-page-english.html">Profile</a>
+            <a href="#">Sign Out</a>
+            </div>
+          </div>
+      </nav>
+      </h1>
+    </header>
+
+    <div id="titleBar">
+      <h2>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn"><a href ="home.html" style ="color:black; text-decoration:none;"><h2>Showtimes</h2></a></button>
+          
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn"><a href ="theatres-english.html" style ="color:black; text-decoration:none;"><h2>Theatres</h2></a></button>
+          
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn"><a href ="trailers-english.html" style ="color:black; text-decoration:none;"><h2>Trailers</h2></a></button>
+          
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn"><a href ="giftcards-english.html" style ="color:black; text-decoration:none;"><h2>Giftcards</h2></a></button>
+        </div>
+
+      </h2>
+    </div>
+
+
+    <fieldset id = "fieldset">
+        <legend>Purchase Gift Cards</legend>
+        Select Gift Card Amount: <br>
+        <div id = 'slide-wrapper'>
+    		<input type="range" min="0" max="200" value="0" step="25" onchange="showValue(this.value)" />$
+    		<span id="range">0</span>
+		</div> <br>
+		Select Quantity Of Gift Cards:
+		<form>
+     		<input type="button" value="-" onclick="minus();"/>
+    		<span id="field">0</span>
+    		<input type="button" value="+" onclick="add();"/>
+		</form> 
+	Choose Gift Card Type: <br><br>
+	<ul class='tabs'>
+      <li><a href='#tab1'>Standard Gift Card</a></li>
+      <li><a href='#tab2'>E Gift Card</a></li>
+    </ul>
+
+    <div id='tab1'>
+      <fieldset id = "fieldset" >
+        
+        Name: <br>
+        <input type="text" name="Recipient Name">
+        <br><br>
+        Email: <br>
+        <input type="text" name="Recipient Email">
+        <br><br>
+        Address: <br>
+        <input type="text" name="Sender Name">
+        <br><br>
+        Delivery Date (MM/DD/YY): <br>
+        <input type="text" name="Delivery Date">
+        <br><br>
+        <input type="submit" value="Checkout">
+      	</fieldset> 
+    </div>
+
+    <div id='tab2'>
+      <fieldset id = "fieldset">
+        
+        Recipient Name: <br>
+        <input type="text" name="Recipient Name">
+        <br><br>
+        Recipient Email: <br>
+        <input type="text" name="Recipient Email">
+        <br><br>
+        Sender Name: <br>
+        <input type="text" name="Sender Name">
+        <br><br>
+        Delivery Date (MM/DD/YY): <br>
+        <input type="text" name="Delivery Date">
+        <br><br>
+        <input type="submit" value="Checkout">
+      	</fieldset> 
+	</div>
+</fieldset>
+
+    <script src="scripts/giftcards.js"></script>
+    
+	</div>
+	</body>
+	</html>

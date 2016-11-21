@@ -1,4 +1,19 @@
-//Tabs
+function showValue(newValue){ document.getElementById("range").innerHTML=newValue; }
+
+var value = 0;
+
+function add() {
+  value++;
+  document.getElementById("field").innerHTML = value;
+}
+
+function minus(){
+  if(value != 0)
+		value--;
+	document.getElementById("field").innerHTML = value;
+}
+
+	//Tabs
 $(document).ready(function(){
   $('ul.tabs').each(function(){
     var $active, $content, $links = $(this).find('a');

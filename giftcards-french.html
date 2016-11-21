@@ -1,0 +1,118 @@
+<DOCTYPE! html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="styles/giftcards.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Entreprise De Cinéma</title>
+  </head>
+  <body> 
+  <div id = "container">
+    <header>
+      <h1>Entreprise De Cinéma
+      <nav id="topNav">
+      <div class = "lang-options">
+      <p> <!--language:
+        <a href="/English/" >English</a>--> |
+        <a class = "lang-options-link" href="giftcards-english.html">English</a> |
+      </p></div>
+   
+          <div class="dropdown" style="float:right; padding:16px;">
+          <button class="dropbtn login">Bob <span class="arrow">&#9660;</span></button>
+          <div class="dropdown-content login">
+            <a href="user-page-french.html">Profil</a>
+            <a href="#">Se déconnecter</a>
+            </div>
+          </div>
+      </nav>
+      </h1>
+    </header>
+
+    <div id="titleBar">
+      <h2>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn"><a href ="homef.html" style ="color:black; text-decoration:none;"><h2>Horaires</h2></a></button>
+          
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn"><a href ="theatres-french.html" style ="color:black; text-decoration:none;"><h2>Théâtre</h2></a></button>
+          
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn"><a href ="trailers-french.html" style ="color:black; text-decoration:none;"><h2>Bandes Annonces</h2></a></button>
+          
+        </div>
+
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn"><a href ="giftcards-french.html" style ="color:black; text-decoration:none;"><h2>Carte Cadeau</h2></a></button>
+        </div>
+
+      </h2>
+    </div>
+
+
+    <fieldset id = "fieldset">
+        <legend>Cartes-cadeaux d'achat</legend>
+        Sélectionner carte-cadeau Montant: <br>
+        <div id = 'slide-wrapper'>
+    		<input type="range" min="0" max="200" value="0" step="25" onchange="showValue(this.value)" />$
+    		<span id="range">0</span>
+		</div> <br>
+		Sélectionnez la quantité de cartes-cadeaux:
+		<form>
+     		<input type="button" value="-" onclick="minus();"/>
+    		<span id="field">0</span>
+    		<input type="button" value="+" onclick="add();"/>
+		</form> 
+	Choisissez le type de carte-cadeau: <br><br>
+	<ul class='tabs'>
+      <li><a href='#tab1'>Carte-cadeau standard</a></li>
+      <li><a href='#tab2'>E Carte Cadeau</a></li>
+    </ul>
+
+    <div id='tab1'>
+      <fieldset id = "fieldset" >
+        
+        Prénom: <br>
+        <input type="text" name="Recipient Name">
+        <br><br>
+        Email: <br>
+        <input type="text" name="Recipient Email">
+        <br><br>
+        Adresse: <br>
+        <input type="text" name="Sender Name">
+        <br><br>
+        Date de livraison (MM/DD/YY): <br>
+        <input type="text" name="Delivery Date">
+        <br><br>
+        <input type="submit" value="check-out">
+      	</fieldset> 
+    </div>
+
+    <div id='tab2'>
+      <fieldset id = "fieldset">
+        
+        Nom du bénéficiaire: <br>
+        <input type="text" name="Recipient Name">
+        <br><br>
+        Destinataire E-mail: <br>
+        <input type="text" name="Recipient Email">
+        <br><br>
+        Nom de l'expéditeur: <br>
+        <input type="text" name="Sender Name">
+        <br><br>
+        Date de livraison (MM/DD/YY): <br>
+        <input type="text" name="Delivery Date">
+        <br><br>
+        <input type="submit" value="check-out">
+      	</fieldset> 
+	</div>
+</fieldset>
+
+    <script src="scripts/giftcards.js"></script>
+    
+    </script>
+	</div>
+	</body>
+	</html>
